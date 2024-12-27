@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bkash Send Money</title>
+    <link rel="shortcut icon" href="../images/BKash_Logo_icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <header class="bg1 mb-5">
+        <div class="border-b border-b-[#b29ab2] py-2">
+            <div class="container px-[10px] lg:px-[0px] mx-auto">
+                <div class="flex justify-between items-center h-full">
+                    <div class="h-[50px]">
+                        <a href="#"> <img class="w-[100px] h-full py-1" src="../images/bkash-logo.png" alt=""></a>
+                    </div>
+
+                    <div class="flex items-center gap-5 text-white">
+                        <a class="text-[15px] md:text-[18px] " href="index.html" class="">Send Money</a>
+                        <a class="text-[15px] md:text-[18px] " href="cash-out.html" class="">Cash Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-[250px] lg:h-[300px] border-b-2 border-b-black w-full ">
+            <img class="w-full h-full" src="../images/send-money.webp" alt="">
+        </div>
+    </header>
+
+    <section class="bkash-body  mt-12 mb-24">
+        <div id="main-id" class="w-[400px] md:w-[600px] mx-auto px-5 border-2 border-[#df126d] rounded-md relative">
+            <div class="popUpPart absolute bg-[#df126d] top-0 left-0 right-0 bottom-0">
+                <div class="text-white text-center h-full flex flex-col justify-between items-center gap-3">
+                    <div class="h-full  flex items-center justify-center">
+                        <p class="px-5" id="popUpText">
+                            You have successfully sent tk <span id="sendmoneytk">30 </span> to <span
+                                id="receiverNumbertk">0124236567768</span>.
+                            Your given number is <span id="radioValuetk">regular</span>. Fee tk <span
+                                id="cargetk">5</span>. Your new balance is tk <span id="newbalancetk">5000 </span>. Use
+                            bKash App for convenience & offers! TCA.
+                        </p>
+                    </div>
+                    <div class="w-[10%]">
+                        <h1><a href="index.html"> Back</a></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="color1 font-bold text-center py-2">
+                <h2 class="text-[28px] md:text-[40px]">Send Money</h2>
+            </div>
+            <form action="#" class="text-[#df126d] py-4">
+                <!-- balance -->
+                <div class="w-full text-lg mb-5">
+                    <label for="bkash-number">BKash Balance :</label>
+                    <input id="currentBalance"
+                        class="border border-[#df126d] w-full p-1 focus:outline-none rounded-md placeholder:text-[12px]"
+                        type="number" placeholder="enter your balance" required>
+                </div>
+
+                <!-- send money amount -->
+                <div class="w-full text-lg mb-5">
+                    <label for="bkash-number">Send Money amount :</label>
+                    <input id="sendMoney"
+                        class="border border-[#df126d] w-full p-1 focus:outline-none rounded-md placeholder:text-[12px]"
+                        type="number" placeholder="enter your balance" required>
+                </div>
+
+                <!-- reciver number -->
+                <div class="w-full text-lg mb-5">
+                    <label for="bkash-number">Receiver Number:</label>
+                    <input id="receiverNumber"
+                        class="border border-[#df126d] w-full p-1 focus:outline-none rounded-md placeholder:text-[12px]"
+                        type="number" placeholder="enter your balance" required>
+                </div>
+
+                <div class="w-full text-lg mt-2">
+
+                    <div class="flex items-center mb-4">
+                        <input id="default-radio-1" type="radio" value="Regular Number" name="radios"
+                            class="w-4 h-4 border-[#df126d]">
+                        <label for="default-radio-1" class="ms-2 text-[15px] font-medium text-[#df126d]">Regular Number
+                        </label>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input id="default-radio-1" type="radio" value="Priyo
+                        Number" name="radios" class="w-4 h-4 border-[#df126d]">
+                        <label for="default-radio-1" class="ms-2 text-[15px] font-medium text-[#df126d]">Priyo
+                            Number
+                        </label>
+                    </div>
+
+                    <div class="mt-4">
+                        <button type="button" onclick="sendmoney()"
+                            class="w-full bg1 rounded-md text-white py-1 font-bold border-2 border-[#df126d] hover:bg-transparent hover:text-[#df126d]">Send</button>
+                    </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="./custom.js"></script>
+</body>
+
+</html>

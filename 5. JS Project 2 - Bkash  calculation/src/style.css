@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+}
+.color1{
+    color: #df126d;
+}
+.bg1{
+    background-color: #df126d;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+#default-radio-1{
+    accent-color: #df126d;
+}
+.popUpPart{
+    visibility: hidden;
+}
+.active .popUpPart{
+    visibility: visible;
+}
